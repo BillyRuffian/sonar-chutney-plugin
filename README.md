@@ -14,7 +14,7 @@ Prerequistes
 --------
 
 * SonarQube 8.x
-* Chutney (chutney is a ruby gem, but, once installed, will lint any language's feature files).
+* Chutney 2.x (chutney is a ruby gem, but, once installed, will lint any language's feature files).
 * A Chutney configuration file (see chutney's documentation) 
 
 ### Building
