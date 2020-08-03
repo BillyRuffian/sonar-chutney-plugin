@@ -58,6 +58,13 @@ public class GherkinChutneySensor implements Sensor {
         StringStreamConsumer stdOut = new StringStreamConsumer();
         StringStreamConsumer stdErr = new StringStreamConsumer();
         CommandExecutor.create().execute(chutney, stdOut, stdErr, 10000);
+
+        LOG.info("Chutney scanned " + filenamesList.size() + " feature files");
+
+        if (!stdErr.getOutput().equals("")) {
+            LOG.error("Chutney reported error during scan: " + stdErr.getOutput());
+        }
+
         JSONObject resultsJSON = new JSONObject(stdOut.getOutput());
         for (InputFile feature : fs.inputFiles(fs.predicates().hasLanguage(GherkinLanguage.KEY))) {
             for (Object lintersObj : resultsJSON.getJSONArray(feature.toString())) {
