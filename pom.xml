@@ -17,6 +17,14 @@
     <sonar.sources>src/main/java,src/main/js</sonar.sources>
   </properties>
 
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub BillyRuffian Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/BillyRuffian/sonar-chutney-plugin</url>
+    </repository>
+  </distributionManagement>
+
   <dependencies>
     <dependency>
       <groupId>org.sonarsource.sonarqube</groupId>
