@@ -1,6 +1,13 @@
 SonarQube Cucumber Gherkin Lint Plugin
 ==========
 
+<div align="center">
+
+  ![CircleCI branch](https://img.shields.io/circleci/project/github/BillyRuffian/sonar-chutney-plugin/master.svg?style=flat-square)
+  ![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/BillyRuffian/sonar-chutney-plugin.svg?style=flat-square)
+
+</div>
+
 This plugin uses the [Chutney](https://billyruffian.github.io/chutney/) linter and integrates into SonarQube 8.x.
 
 Prerequistes
